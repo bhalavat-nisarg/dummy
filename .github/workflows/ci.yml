@@ -26,7 +26,7 @@ jobs:
           API_TOKEN_GUTHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-          target-branch: heroku
+          target-branch: ci
       - name: Test get variable exported by push-to-another-repository
         run: echo $DESTINATION_CLONED_DIRECTORY
 
