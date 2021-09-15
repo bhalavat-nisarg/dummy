@@ -25,6 +25,7 @@ jobs:
         env: 
           API_TOKEN_GUTHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
+          destination-repository-name: 'dummy'
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-branch: ci
       - name: Test get variable exported by push-to-another-repository
